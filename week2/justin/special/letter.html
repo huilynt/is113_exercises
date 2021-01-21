@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <title>Love Letter to Justin Babe</title>
 
-Love Letter to Justin Babe
-
-
-<body>
-
+  <body>
     <!-- Part F -->
-    Send Your Love to Justin
-    <img>
+    <h1>Send Your Love to Justin</h1>
+    <img src="../images//justin4.gif" />
 
-
-    <form action='process_letter.php' method='GET'>
-        
-        <!-- Part G -->
-        Full Name: 
-        
-        
-        Age: 
-        
-        
-        Gender:
-        
-
-        
-        Relationship Status (please be truthful):
-        
-
-        
-        Favorite Justin Songs:
-        
-        Sorry
-        
-        Baby
-        
-        Boyfriend
-        
-        Let Me Love You
-        
-        I Don't Care
-        
-        
-        Message to Justin:
-        
-
-        
-        Send My Love to Justin
-
+    <form action="process_letter.php" method="GET">
+      <!-- Part G -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" name="fullname" />
+      <br />
+      <label for="age">Age:</label><input type="number" name="age" min="0" />
+      <br />
+      <label for="gender">Gender:</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br />
+      Relationship Status (please be truthful):
+      <br />
+      <input type="radio" name="status" value="single" tabindex="" />
+      <label for="single">Single</label>
+      <br />
+      <input type="radio" name="status" value="attached" tabindex="" />
+      <label for="single">Attached</label>
+      <br />
+      <input type="radio" name="status" value="complicated" tabindex="" />
+      <label for="single">Complicated</label>
+      <br />
+      Favorite Justin Songs:
+      <br />
+      <input type="checkbox" name="songs[]" value="sorry" />
+      <label for="songs[]">Sorry</label>
+      <br />
+      <input type="checkbox" name="songs[]" value="baby" />
+      <label for="songs[]">Baby</label>
+      <br />
+      <input type="checkbox" name="songs[]" value="boyfriend" />
+      <label for="songs[]">Boyfriend</label>
+      <br />
+      <input type="checkbox" name="songs[]" value="letMeLoveYou" />
+      <label for="songs[]">Let Me Love You</label>
+      <br />
+      <input type="checkbox" name="songs[]" value="iDontCare" />
+      <label for="songs[]">I Don't Care</label>
+      <br />
+      Message to Justin:
+      <br />
+      <textarea name="message" cols="50" rows="3"></textarea>
+      <br />
+      <input type="submit" value="Send My Love to Justin" />
     </form>
 
     <!-- Part H -->
     <!-- Hyperlink BACK to justin.html -->
     <!-- <hr> is a Horizontal Line element - it spans 100% across the width of the browser window -->
-    <hr>
+    <hr />
     Back to Justin Fan Page
-
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+</head>
+<body>
+    <form>
+        Title:
+        <input type="text" name="title" id="title" value="Title of Feedback">
+        <br>
+        Name:
+        <input type="text" name="name" id="name" value="Enter Your Name">
+        <br>
+        Type:
+        <select name="type[]" id="type">
+            <option value="inquiries">Inquiries</option>
+            <option value="feedback" selected>Feedbacks</option>
+            <option value="suggestions">Suggestions</option>
+        </select>
+        <br><br>
+        Feedback
+        <br>
+        <textarea name="feedback" id="feedback" cols="50" rows="5">Comments</textarea>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
