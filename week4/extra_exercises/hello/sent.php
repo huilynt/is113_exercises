@@ -1,5 +1,6 @@
 <?php
-    $message = $_GET['message'];
+
+    $message = $_GET['msg'];
     $num = (int)$_GET['num'];
 
     $error_msg = "";
@@ -28,5 +29,5 @@
         }
         echo "</table>";
     }
-    
+
 ?>
